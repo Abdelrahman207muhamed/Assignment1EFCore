@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,4 +21,18 @@ namespace Assignment1EFCore.Entities
     //} 
     #endregion
 
+    public class Instructor
+    {
+        [Key]
+        public int Id { get; set; }
+        [Required]
+        public string Name { get; set; }
+        public decimal Bouns { get; set; }
+        public decimal Salary { get; set; }
+        public string Address { get; set; }
+        public decimal HourRate { get; set; }
+        [ForeignKey("Department")]
+        public int Dep_Id { get; set; }
+
+    }
 }
