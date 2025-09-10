@@ -10,30 +10,32 @@ namespace Assignment1EFCore.Entities
     #region Convention
     //Convention:
 
-    //internal class Course
-    //{
-    //    public int Id { get; set; }
-    //    public int Duration { get; set; }
-    //    public string Name { get; set; }
-    //    public string Description { get; set; }
-    //    public int Top_Id { get; set; }
-    //} 
+    internal class Course
+    {
+        public int Id { get; set; }
+        public int Duration { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int Top_Id { get; set; }
+    }
     #endregion
 
-    public class Course
-    {
-        [Key]
-        public int ID { get; set; }
+    #region Data Annotation
+    //public class course
+    //{
+    //    [key]
+    //    public int id { get; set; }
 
-        public int Duration { get; set; }
+    //    public int duration { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string Name { get; set; }
+    //    [required]
+    //    [stringlength(100)]
+    //    public string name { get; set; }
 
-        [StringLength(500)]
-        public string Description { get; set; }
+    //    [stringlength(500)]
+    //    public string description { get; set; }
 
-        public int Top_ID { get; set; }
-    }
+    //    public int top_id { get; set; }
+    //} 
+    #endregion
 }

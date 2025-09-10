@@ -16,6 +16,7 @@ namespace Assignment1EFCore.Entities
     //} 
     #endregion
 
+    #region Data Annotation
     public class Course_Inst
     {
         [Key]
@@ -27,5 +28,6 @@ namespace Assignment1EFCore.Entities
         [Range(1, 5)]
         public int evaluate { get; set; }
     }
+    #endregion
 
 }

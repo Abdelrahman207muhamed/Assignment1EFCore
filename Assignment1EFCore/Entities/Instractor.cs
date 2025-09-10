@@ -21,6 +21,7 @@ namespace Assignment1EFCore.Entities
     //} 
     #endregion
 
+    #region Data Annotation
     public class Instructor
     {
         [Key]
@@ -35,4 +36,5 @@ namespace Assignment1EFCore.Entities
         public int Dep_Id { get; set; }
 
     }
+    #endregion
 }

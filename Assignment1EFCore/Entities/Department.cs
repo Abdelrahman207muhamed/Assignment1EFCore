@@ -17,6 +17,7 @@ namespace Assignment1EFCore.Entities
     //} 
     #endregion
 
+    #region Data Annotation
     public class Department
     {
         [Key]
@@ -27,5 +28,6 @@ namespace Assignment1EFCore.Entities
         public DateTime HiringDate { get; set; }
 
     }
+    #endregion
 
 }

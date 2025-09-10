@@ -17,6 +17,7 @@ namespace Assignment1EFCore.Entities
     //} 
     #endregion
 
+    #region Data Annotation
     public class Stud_Course
     {
         [Key]
@@ -28,4 +29,5 @@ namespace Assignment1EFCore.Entities
         [Range(0, 100)]
         public decimal Grade { get; set; }
     }
+    #endregion
 }

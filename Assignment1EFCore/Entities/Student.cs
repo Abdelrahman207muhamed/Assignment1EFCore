@@ -19,20 +19,23 @@ namespace Assignment1EFCore.Entities
     //    public int Dep_Id { get; set; }
     //} 
     #endregion
+
+    #region Data Annotation
     public class Student
     {
         [Key]
-        public int Id { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string FName { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string LName { get; set; }
-        [StringLength(100)]
-        public string Address { get; set; }
-        public int Age { get; set; }
-        [ForeignKey("Department")]
-        public int Dep_Id { get; set; }
-    }
+    public int Id { get; set; }
+    [Required]
+    [StringLength(50)]
+    public string FName { get; set; }
+    [Required]
+    [StringLength(50)]
+    public string LName { get; set; }
+    [StringLength(100)]
+    public string Address { get; set; }
+    public int Age { get; set; }
+    [ForeignKey("Department")]
+    public int Dep_Id { get; set; }
+} 
+    #endregion
 }

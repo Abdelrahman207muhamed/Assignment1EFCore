@@ -15,6 +15,7 @@ namespace Assignment1EFCore.Entities
     //} 
     #endregion
 
+    #region Data Annotation
     public class Topic
     {
         [Key]
@@ -24,4 +25,5 @@ namespace Assignment1EFCore.Entities
         [StringLength(100)]
         public string Name { get; set; }
     }
+    #endregion
 }
